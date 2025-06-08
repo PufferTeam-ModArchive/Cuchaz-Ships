@@ -6,17 +6,17 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships;
 
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityHelm extends TileEntity {
-	
-	// not much to do here... move along
-	@Override
-	public boolean canUpdate() {
-		return false;
-	}
+
+    // not much to do here... move along
+    @Override
+    public boolean canUpdate() {
+        return false;
+    }
 }

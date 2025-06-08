@@ -1,8 +1,8 @@
 package cuchaz.modsShared;
 
-import net.minecraft.entity.player.EntityPlayer;
-
 import java.lang.reflect.Method;
+
+import net.minecraft.entity.player.EntityPlayer;
 
 public class PermissionUtil {
 
@@ -14,10 +14,10 @@ public class PermissionUtil {
     public PermissionUtil() {
         try {
             this.bukkit = Class.forName("org.bukkit.Bukkit");
-            this.getPlayer = this.bukkit.getMethod("getPlayer", new Class[]{String.class});
-            this.hasPermission = Class.forName("org.bukkit.entity.Player").getMethod("hasPermission", new Class[]{String.class});
-        } catch (Exception exp) {
-        }
+            this.getPlayer = this.bukkit.getMethod("getPlayer", new Class[] { String.class });
+            this.hasPermission = Class.forName("org.bukkit.entity.Player")
+                .getMethod("hasPermission", new Class[] { String.class });
+        } catch (Exception exp) {}
     }
 
     public static boolean hasPermission(EntityPlayer player, String permission) {
@@ -26,10 +26,9 @@ public class PermissionUtil {
 
     private boolean bukkitPermission(String username, String permission) {
         try {
-            Object e = this.getPlayer.invoke(null, new Object[]{username});
-            return ((Boolean) this.hasPermission.invoke(e, new Object[]{permission})).booleanValue();
-        } catch (Exception exp) {
-        }
+            Object e = this.getPlayer.invoke(null, new Object[] { username });
+            return ((Boolean) this.hasPermission.invoke(e, new Object[] { permission })).booleanValue();
+        } catch (Exception exp) {}
 
         return false;
     }

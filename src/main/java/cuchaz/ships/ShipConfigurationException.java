@@ -6,15 +6,15 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships;
 
 public class ShipConfigurationException extends RuntimeException {
-	
-	private static final long serialVersionUID = -9007053086464550720L;
-	
-	public ShipConfigurationException(String message) {
-		super(message);
-	}
+
+    private static final long serialVersionUID = -9007053086464550720L;
+
+    public ShipConfigurationException(String message) {
+        super(message);
+    }
 }

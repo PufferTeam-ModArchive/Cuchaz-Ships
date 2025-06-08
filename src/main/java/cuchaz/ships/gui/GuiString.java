@@ -6,57 +6,58 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.gui;
 
 import net.minecraft.util.StatCollector;
 
 public enum GuiString {
-	Yes,
-	No,
-	ShipConstruction,
-	ShipDashboard,
-	ShipNumBlocks,
-	ShipLaunch,
-	ShipUnlaunch,
-	ShipWillItFloat,
-	ShipAlignedToDirection,
-	ShipAwayFromBlocks,
-	ShipPropulsion,
-	NoShipBlock,
-	InvalidShip,
-	ClipboardUsage,
-	NoShipWasFoundHere,
-	CopiedShip,
-	NoShipOnClipboard,
-	NoRoomToPasteShip,
-	PastedShip,
-	OnlyCreative,
-	NoPropulsion,
-	FoundPropulsion,
-	ShipUnlaunchOverride,
-	ShipUnlaunchOverrideWarning,
-	EraserUsage,
-	ShipIsUnsinkable,
-	ShipFloatsCloseToSinkLine,
-	Sink,
-	Slept,
-	BerthNotFound,
-	TryOnStillWater,
-	ShipDataCorrupted;
-	
-	public String getKey() {
-		return "cuchaz.ships." + name();
-	}
-	
-	public String getLocalizedText() {
-		String text = StatCollector.translateToLocal(getKey());
-		if (text != null && text.length() > 0) {
-			return text;
-		}
-		
-		// if nothing worked, just return the name
-		return name();
-	}
+
+    Yes,
+    No,
+    ShipConstruction,
+    ShipDashboard,
+    ShipNumBlocks,
+    ShipLaunch,
+    ShipUnlaunch,
+    ShipWillItFloat,
+    ShipAlignedToDirection,
+    ShipAwayFromBlocks,
+    ShipPropulsion,
+    NoShipBlock,
+    InvalidShip,
+    ClipboardUsage,
+    NoShipWasFoundHere,
+    CopiedShip,
+    NoShipOnClipboard,
+    NoRoomToPasteShip,
+    PastedShip,
+    OnlyCreative,
+    NoPropulsion,
+    FoundPropulsion,
+    ShipUnlaunchOverride,
+    ShipUnlaunchOverrideWarning,
+    EraserUsage,
+    ShipIsUnsinkable,
+    ShipFloatsCloseToSinkLine,
+    Sink,
+    Slept,
+    BerthNotFound,
+    TryOnStillWater,
+    ShipDataCorrupted;
+
+    public String getKey() {
+        return "cuchaz.ships." + name();
+    }
+
+    public String getLocalizedText() {
+        String text = StatCollector.translateToLocal(getKey());
+        if (text != null && text.length() > 0) {
+            return text;
+        }
+
+        // if nothing worked, just return the name
+        return name();
+    }
 }

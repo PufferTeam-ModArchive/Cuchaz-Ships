@@ -1,11 +1,11 @@
 {
 	"modListVersion": 2,
 	"modList": [{
-		"modid": "${modId}",
-		"name": "${modName}",
+		"modid": "cuchaz.ships",
+		"name": "Ships Mod",
 		"description": "Build sailable ships out of blocks.",
 		"version": "${modVersion}",
-		"mcversion": "${minecraftVersion}",
+		"mcversion": "1.7.10",
 		"url": "https://github.com/TeloDev/Cuchaz-Ships",
 		"updateUrl": "",
 		"authorList": ["Cuchaz"],

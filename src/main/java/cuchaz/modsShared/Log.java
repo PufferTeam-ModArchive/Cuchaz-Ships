@@ -6,13 +6,13 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     Jeff Martin - initial API and implementation
+ * Jeff Martin - initial API and implementation
  ******************************************************************************/
 package cuchaz.modsShared;
 
 import java.util.logging.Logger;
 
 public class Log {
-	
-	public static final Logger logger = Logger.getLogger("cuchaz.modsShared");
+
+    public static final Logger logger = Logger.getLogger("cuchaz.modsShared");
 }

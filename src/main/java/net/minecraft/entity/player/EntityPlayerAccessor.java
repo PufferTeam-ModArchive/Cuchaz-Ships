@@ -6,13 +6,13 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     Jeff Martin - initial API and implementation
+ * Jeff Martin - initial API and implementation
  ******************************************************************************/
 package net.minecraft.entity.player;
 
 public class EntityPlayerAccessor {
-	
-	public static void setSleeping(EntityPlayer player, boolean val) {
-		player.sleeping = val;
-	}
+
+    public static void setSleeping(EntityPlayer player, boolean val) {
+        player.sleeping = val;
+    }
 }

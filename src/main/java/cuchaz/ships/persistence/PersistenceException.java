@@ -6,19 +6,19 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.persistence;
 
 public class PersistenceException extends Exception {
-	
-	private static final long serialVersionUID = -5267418089825144274L;
-	
-	public PersistenceException(String message) {
-		super(message);
-	}
-	
-	public PersistenceException(String message, Exception cause) {
-		super(message, cause);
-	}
+
+    private static final long serialVersionUID = -5267418089825144274L;
+
+    public PersistenceException(String message) {
+        super(message);
+    }
+
+    public PersistenceException(String message, Exception cause) {
+        super(message, cause);
+    }
 }

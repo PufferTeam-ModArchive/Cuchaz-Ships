@@ -6,22 +6,22 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     Jeff Martin - initial API and implementation
+ * Jeff Martin - initial API and implementation
  ******************************************************************************/
 package cuchaz.modsShared.perf;
 
 public class DelayTimer {
-	
-	private int m_numTicks;
-	private int m_timer;
-	
-	public DelayTimer(int numTicks) {
-		m_numTicks = numTicks;
-		m_timer = 0;
-	}
-	
-	public boolean isDelayedUpdate() {
-		m_timer = (m_timer + 1) % m_numTicks;
-		return m_timer == 0;
-	}
+
+    private int m_numTicks;
+    private int m_timer;
+
+    public DelayTimer(int numTicks) {
+        m_numTicks = numTicks;
+        m_timer = 0;
+    }
+
+    public boolean isDelayedUpdate() {
+        m_timer = (m_timer + 1) % m_numTicks;
+        return m_timer == 0;
+    }
 }

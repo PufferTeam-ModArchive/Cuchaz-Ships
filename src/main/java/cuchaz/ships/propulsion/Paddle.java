@@ -6,21 +6,21 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.propulsion;
 
 import cuchaz.modsShared.Util;
 
 public class Paddle extends PropulsionMethod {
-	
-	public Paddle() {
-		super("Paddle", "Paddles");
-	}
-	
-	@Override
-	public double getThrust(double speed) {
-		// the paddle always has constant thrust
-		return Util.perSecond2ToPerTick2(80);
-	}
+
+    public Paddle() {
+        super("Paddle", "Paddles");
+    }
+
+    @Override
+    public double getThrust(double speed) {
+        // the paddle always has constant thrust
+        return Util.perSecond2ToPerTick2(80);
+    }
 }

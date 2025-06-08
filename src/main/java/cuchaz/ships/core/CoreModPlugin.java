@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.core;
 
@@ -19,35 +19,35 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 @IFMLLoadingPlugin.TransformerExclusions({ "cuchaz.ships.core" })
 @IFMLLoadingPlugin.SortingIndex(value = 1001)
 public class CoreModPlugin implements IFMLLoadingPlugin {
-	
-	public static Boolean isObfuscatedEnvironment = null;
-	
-	@Override
-	public String[] getASMTransformerClass() {
-		return new String[] { "cuchaz.ships.core.CoreModTransformer" };
-	}
-	
-	@Override
-	public String getAccessTransformerClass() {
-		return null;
-	}
-	
-	@Override
-	public String getModContainerClass() {
-		return "cuchaz.ships.core.ShipsCore";
-	}
-	
-	@Override
-	public String getSetupClass() {
-		// implement this if we want to get launcher classloader directly
-		return null;
-	}
-	
-	@Override
-	public void injectData(Map<String,Object> data) {
-		// data keys: mcLocation, coremodList, runtimeDeobfuscationEnabled, coremodLocation
-		
-		// are we running in an obfuscated environment?
-		isObfuscatedEnvironment = (Boolean)data.get("runtimeDeobfuscationEnabled");
-	}
+
+    public static Boolean isObfuscatedEnvironment = null;
+
+    @Override
+    public String[] getASMTransformerClass() {
+        return new String[] { "cuchaz.ships.core.CoreModTransformer" };
+    }
+
+    @Override
+    public String getAccessTransformerClass() {
+        return null;
+    }
+
+    @Override
+    public String getModContainerClass() {
+        return "cuchaz.ships.core.ShipsCore";
+    }
+
+    @Override
+    public String getSetupClass() {
+        // implement this if we want to get launcher classloader directly
+        return null;
+    }
+
+    @Override
+    public void injectData(Map<String, Object> data) {
+        // data keys: mcLocation, coremodList, runtimeDeobfuscationEnabled, coremodLocation
+
+        // are we running in an obfuscated environment?
+        isObfuscatedEnvironment = (Boolean) data.get("runtimeDeobfuscationEnabled");
+    }
 }

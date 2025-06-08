@@ -6,14 +6,14 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.blocks;
 
 public class BlockAirRoof extends BlockAirWall {
-	
-	public BlockAirRoof() {
-		// an air block that stops rain
-		setBlockName("cuchaz.ships.airRoof");
-	}
+
+    public BlockAirRoof() {
+        // an air block that stops rain
+        setBlockName("cuchaz.ships.airRoof");
+    }
 }

@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     jeff - initial API and implementation
+ * jeff - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.propulsion;
 
@@ -16,6 +16,6 @@ import cuchaz.modsShared.blocks.BlockSide;
 import cuchaz.ships.BlocksStorage;
 
 public interface PropulsionDiscoverer {
-	
-	public List<PropulsionMethod> getPropulsionMethods(BlocksStorage blocksStorage, BlockSide frontDirection);
+
+    public List<PropulsionMethod> getPropulsionMethods(BlocksStorage blocksStorage, BlockSide frontDirection);
 }

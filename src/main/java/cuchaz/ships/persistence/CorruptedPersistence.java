@@ -6,15 +6,15 @@
  * http://www.gnu.org/licenses/gpl.html
  * 
  * Contributors:
- *     Jeff Martin - initial API and implementation
+ * Jeff Martin - initial API and implementation
  ******************************************************************************/
 package cuchaz.ships.persistence;
 
 public class CorruptedPersistence extends PersistenceException {
-	
-	private static final long serialVersionUID = 6468194186150584767L;
-	
-	public CorruptedPersistence(Exception cause) {
-		super("Saved ship appears corrupted!", cause);
-	}
+
+    private static final long serialVersionUID = 6468194186150584767L;
+
+    public CorruptedPersistence(Exception cause) {
+        super("Saved ship appears corrupted!", cause);
+    }
 }
